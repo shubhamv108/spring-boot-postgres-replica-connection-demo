@@ -1,0 +1,22 @@
+[
+  {
+    "name": "code.shubham.demo.pagination.cursor.utils.pageinfo.PageInfo",
+    "allDeclaredFields": true,
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "code.shubham.commons.configurations.DataSourceConfig",
+    "allDeclaredFields": true,
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "code.shubham.commons.configurations.TransactionConfig",
+    "allDeclaredFields": true,
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "code.shubham.commons.configurations.ReplicationRoutingDataSource",
+    "allDeclaredFields": true,
+    "allDeclaredConstructors": true
+  }
+]
