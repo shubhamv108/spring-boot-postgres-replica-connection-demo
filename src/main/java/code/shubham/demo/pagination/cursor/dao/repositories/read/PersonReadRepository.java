@@ -14,12 +14,10 @@ import java.util.List;
 @Repository
 public interface PersonReadRepository extends JpaRepository<Person, Integer> {
 
-    @Transactional(readOnly = true)
     @Query("SELECT p FROM Person p WHERE (p.createdAt > :createdAt) " +
             "OR (p.createdAt = :createdAt AND p.id > :id)")
     List<Person> findAllByCursor(@Param("createdAt") Timestamp createdAt, @Param("id") Long id, Pageable pageable);
 
-    @Transactional(readOnly = true)
     @Query("SELECT p FROM Person p WHERE (p.createdAt < :createdAt) " +
             "OR (p.createdAt = :createdAt AND p.id < :id)")
     List<Person> findAllByCursorReverse(@Param("createdAt") Timestamp createdAt, @Param("id") Long id, Pageable pageable);
